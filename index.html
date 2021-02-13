@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 헤더안은  
+        1) 해당 어플리케이션에 대한 설명
+        2) 검색엔진을 위한 메타데이터
+        3) 필요한 모든 리소스를 링크
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- defer 비동기적으로 js을 로드할 수 있도록 한다. -->
+    <script type="module" src="./dist/app.js" defer></script> 
+    <link rel="stylesheet" href="./style/style-210130-223208.css">
+    <title>Motion</title>
+</head>
+<body>
+    <div class="app">
+        <header class="banner">
+            <h1 class="banner__title">Motion</h1>
+            <ul class="control-panel">
+                <li><button id="new-image" class="create-button">Image</button></li>
+                <li><button id="new-video" class="create-button">Video</button></li>
+                <li><button id="new-note" class="create-button">Note</button></li>
+                <li><button id="new-todo" class="create-button">Todo</button></li>
+            </ul>
+        </header>
+        <main class="document"></main>
+        <footer class="footer">
+            <p>© Copyright by Dream Coding Academy. All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
